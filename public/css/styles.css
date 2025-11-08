@@ -1,0 +1,293 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+header{
+    background: url("/images/flower5.jpg") center/cover no-repeat;
+    color: #ef6ab3;
+    text-align: center;
+    padding: 30px 15px;
+    position: relative;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 20px;
+}
+
+header h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p{
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.create-btn-container{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.create-btn{
+    background-color: #ff5da2;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+#create-btn:hover{
+    background-color: #ff80b5;
+    transform: translateY(-2px);
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px, 20px;
+    gap: 30px;
+}
+
+.blog-card{
+    background-color: rgba(255, 182, 193, 0.3);
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    width: 300px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.blog-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card h2{
+    color: #ef6ab3;
+}
+
+.blog-card p{
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.edit-btn,
+.delete-btn{
+    background-color: #ff5da2;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-right: 6px;
+    transition: 0.3s;
+    border: none;
+}
+
+.edit-btn:hover{
+    background-color: #ff80b5;
+}
+.delete-btn:hover{
+    background-color: #ff8fab;
+}
+
+/*--------- Create Page ----------*/
+.create-section{
+    padding: 10px;
+    text-align: center;
+}
+
+.create-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.create-form input,
+.create-form textarea{
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.create-form button{
+    background-color: #ff5da2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.create-form button:hover{
+    background-color: #ff80b5;
+}
+
+.post-actions{
+    margin-top: 10px;
+}
+
+/*--------- Edit Page ---------*/
+.edit-container{
+    max-width: 600px;
+    margin: 20px auto;
+    width: 60%;
+    background-color: #ffe9ec;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.edit-container h2{
+    color: #ff5da2;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.edit-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.edit-container input[type="text"],
+.edit-container textarea{
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #f1b5c8;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    background-color: #fffaf8;
+}
+
+.edit-container input[type="text"]:focus,
+.edit-container textarea:focus{
+    border-color: #ef6ab3;
+    box-shadow: 0 0 6px rgba(239, 106, 179, 0.3);
+}
+
+.edit-container button{
+    background-color: #ff5da2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-container button:hover{
+    color: #ff5da2;
+    background-color: white;
+}
+
+/*--------- footer ------------*/
+
+footer{
+    margin-top: auto;
+}
+
+.main-footer{
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    background-color: #ef6ab3;
+    margin-top: 60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px ;
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.about-link{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.about-link:hover{
+    text-decoration: underline;
+}
+
+/*--------- about page ------------*/
+
+.about-section{
+    background-color: #fce4ec;
+    background-image: url("/images/flower_img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+
+    width: 90%;
+    max-width: 1100px;
+    min-height: 40vh;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 20px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+
+    text-align: center;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2{
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*--------- character-counter ---------*/
+
+.char-counter{
+    text-align: right;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

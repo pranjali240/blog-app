@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <section class="create-section">
+        <h1>Create a New Blog</h1>
+        <form action="/create" method="POST" class="create-form">
+            <input type="text" name="title" placeholder="Enter blog title" required>
+            <textarea name="content" rows="6" placeholder="Write your post here..."  required></textarea>
+            <button type="submit">Publish</button>
+        </form>
+    </section>
+</body>
+</html>
+
+<%- include("partials/footer") %>
+
+<script src="/js/counter.js"></script>
