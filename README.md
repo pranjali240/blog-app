@@ -37,3 +37,24 @@ This project was developed as part of a Full Stack Development Internship Skill 
 1. Clone the repository  
    ```bash
    git clone https://github.com/pranjali240/blog-app
+
+2. Go to the project folder
+   cd blog-app
+3. Install dependencies
+   npm install
+4. Start the server
+   node app.js
+or
+   npm start
+   Open your browser and go to:
+    http://localhost:3000
+   
+## 🌐 Live Demo
+👉 https://blog-app-1-0bhz.onrender.com
+
+## 📝 Note on Database
+This project currently demonstrates CRUD functionality using Node.js and Express.js without a persistent database.  
+Data handling is done at the application level.  
+Due to time constraints, database integration (MySQL/MongoDB) has not been implemented in this version and is planned as a future enhancement.
+   
+
